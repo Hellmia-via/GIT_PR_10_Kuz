@@ -1,0 +1,15 @@
+name: .NET
+
+on: 
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      -uses: step1
+      run: echo "Hello, world!!"
+
+      -name: step2
+      run: dotnet --info
